@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@app": ["src/components/container"],
+      "@app/*": ["src/components/container/*"],
+
+      "@ui": ["src/components/ui"],
+      "@ui/*": ["src/components/ui/*"],
+
+      "@modules": ["src/modules"],
+      "@modules/*": ["src/modules/*"],
+
+      "@types": ["src/types"],
+      "@types/*": ["src/types/*"],
+
+      "@constants": ["src/constants"],
+      "@constants/*": ["src/constants/*"]
+    },
+    /* noEmit - Snowpack builds (emits) files, not tsc. */
+    "noEmit": true,
+    /* Additional Options */
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["mocha", "snowpack-env"],
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "importsNotUsedAsValues": "error",
+    "noUncheckedIndexedAccess": true,
+  },
+  "include": ["./src/**/*"],
+  "exclude": [],
+  "extends": "@tsconfig/svelte/tsconfig.json",
+}
