@@ -8,5 +8,4 @@ Open http://localhost:8000 to view it in the browser.
 
 ### yarn run build
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+Builds a static copy of your site to the `public/` folder.
